@@ -365,9 +365,9 @@ void processData(String data) {
       // Convert BPM value to float
       float bpm = Float.parseFloat(values[0]);
       // Convert average temperature value to float
-      float averageTemperature = Float.parseFloat(values[2]);
+      float averageTemperature = Float.parseFloat(values[1]);
       // Convert humidity value to float
-      float humidity = Float.parseFloat(values[1]);
+      float humidity = Float.parseFloat(values[2]);
       heartRateData.add(bpm);
       temperatureData.add(averageTemperature);
       humidityData.add(humidity);
