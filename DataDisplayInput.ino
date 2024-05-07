@@ -31,9 +31,7 @@ void loop() {
   // Map sensor value to BPM range (adjust minSensorValue and maxSensorValue based on calibration)
   int bpm = map(pulseSensorValue, sensorMin, sensorMax, minBPM, maxBPM);
 
-  // Print BPM value for debugging
-  Serial.print("BPM: ");
-  Serial.println(bpm);
+
 
   // Read temperature and humidity from DHT sensor
   float humidity = dht.readHumidity();
